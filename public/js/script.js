@@ -11,7 +11,7 @@ btn.addEventListener("click", (e) => {
         let {description, icon, place, temp, humidity} = data
         heading.innerHTML = `${place}`
         document.querySelector(".data").innerHTML = `
-            <img class="icon-img" src="http://openweathermap.org/img/wn/${icon}@4x.png" alt="" srcset="">
+            <img class="icon-img" src="https://openweathermap.org/img/wn/${icon}@4x.png" alt="" srcset="">
             <div class="top">
                 <h2 class="description">${description}</h2>
             </div>
