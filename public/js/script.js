@@ -6,7 +6,7 @@ btn.addEventListener("click", (e) => {
     e.preventDefault()
     heading.innerHTML = "Loading..."
     let address = inputEl.value
-    fetch(`http://localhost:3000/weather?address=${address}`).then(res => res.json()).then(data => {
+    fetch(`/weather?address=${address}`).then(res => res.json()).then(data => {
         console.log(data)
         let {description, icon, place, temp, humidity} = data
         heading.innerHTML = `${place}`
